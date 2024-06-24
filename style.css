@@ -16,7 +16,7 @@ nav ul {
     align-items: center;
     list-style: none;
     gap: 1em;
-    opacity: 0.9;
+    opacity: 0.7;
 	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     height: auto;
     box-sizing: border-box;
@@ -66,10 +66,30 @@ html {
     align-items: center;
     justify-content: center;
     padding: 180px;
+    flex-direction: column;
     /* border: 1px solid #212121; */
     margin: 100px;
     width: fit-content;
 	/* background-color: ; */
+}
+.cv{
+    padding: 47px;
+    margin: 20px;
+    border-radius: 15px;
+    /* width: 40vh;
+    height: 40vh; */
+    opacity: 0.7;
+    background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+}
+
+.cv a{
+    text-decoration: none;
+    color: white;
+}
+
+.cv a:hover{
+    color: greenyellow;
+    opacity: 0.5;
 }
 
 p {
