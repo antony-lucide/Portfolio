@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="./Stylesheet/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio Antony-Lucide</title>
@@ -14,68 +15,164 @@
     <nav>
         <div class="navbar">
             <ul>
-                <span class="nom">By Antony</span>
+                <span class="nom">Portfolio</span>
                 <img class="menu" src="./Images/css-3.png" alt="CSS Logo">
                 <li><a class="onglet" href="#anchor"><span>Home</span></a></li>
-                <li><a class="onglet" href="#"><span>About</span></a></li>
-                <li><a class="onglet" href="#"><span>Contact</span></a></li>
-                <li><a class="onglet" href="#"><span>Info</span></a></li>
+                <li><a class="onglet" href="#Projects"><span>Projects</span></a></li>
+                <li><a class="onglet" href="#contact"><span>Contact</span></a></li>
             </ul>
         </div>
     </nav>
     <main>
         <section id="anchor" class="corp">
-            <img src="./Images/profil.jpeg" alt="" srcset="" width="120vh">
-            <h1>Antony Lucide</h1>
-            <div class="cv">
-                <a href="#" download>Downloads CV</a>
-            </div>
-            <div class="contenue">
-                <img class="Profil" src="./Images/internet.png" alt="Profile Image">
-                <p>Étudiant passionné et travailleur basé à Marseille, j’aime concevoir et développer des sites web et des applications adaptés aux besoins des entreprises et des particuliers.</p>
+            <div class="profile-header">
+                <div class="profile-image-container">
+                    <img src="./Images/profil.jpeg" alt="Antony Lucide">
+                </div>
+                <div  class="profile-info">
+                    <h1>Antony Lucide</h1>
+                    <p>Étudiant passionné et travailleur basé à Marseille, j'aime concevoir et développer des sites web et des applications adaptés aux besoins des entreprises et des particuliers.</p>
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Années d'expérience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Projets</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                    </div>
+                    <div class="profile-actions">
+                        <a href="#" class="action-button primary" download>Télécharger CV</a>
+                        <a href="#" class="action-button">Contact</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <section class="Projects">
-		<div>
-			<h2>V-Rising</h2>
-			<img src="./Images/vampire.png" alt="V-Rising">
-			<p>Projet de création d’un fansite vitrine autour d’un thème libre, pour lequel j’ai choisi l'univers de V Rising</p>
-			<a href="">Lien</a>
-		</div>
-		<div>
-			<h2>Ville-Marseille</h2>
-			<img src="./Images/ville-marseille.png" alt="Ville-Marseille">
-			<p>Projet visant à révéler Marseille sous des angles inédits grâce à un site vitrine interactif et dynamique</p>
-			<a href="">Lien</a>
-		</div>
-		<div>
-			<h2>Voyage</h2>
-			<img src="./Images/voyage.png" alt="Voyage">
-			<p>Site de Reservation de Voyage, Projet d'école</p>
-			<a href="">Lien</a>
-		</div>
-		<div>
-			<h2>CyberNerd</h2>
-			<img src="./Images/cybernerd.png" alt="CyberNerd">
-			<p>Site Fan sur la Thème Cyberpunk Old School/Vintage</p>
-			<a href="">Lien</a>
-		</div>
-		<div>
-			<h2>Multiverse</h2>
-			<img src="./Images/multiverse.png" alt="Multiverse">
-			<p>Site et application illustrant le fonctionnement des réseaux avec Docker</p>
-			<a href="">Lien</a>
-		</div>
+    <section class="technologies">
+        <h2>Technologies</h2>
+        <div class="tech-grid">
+            <div class="tech-item">
+                <img src="./Images/html-5.png" alt="HTML5">
+                <span>HTML5</span>
+                <div class="tech-level">Avancé</div>
+            </div>
+            <div class="tech-item">
+                <img src="./Images/css-3.png" alt="CSS3">
+                <span>CSS3</span>
+                <div class="tech-level">Avancé</div>
+            </div>
+            <div class="tech-item">
+                <img src="./Images/js.png" alt="JavaScript">
+                <span>JavaScript</span>
+                <div class="tech-level">Intermédiaire</div>
+            </div>
+            <div class="tech-item">
+                <img src="./Images/php.png" alt="PHP">
+                <span>PHP</span>
+                <div class="tech-level">Intermédiaire</div>
+            </div>
+            <div class="tech-item">
+                <img src="./Images/mysql.png" alt="MySQL">
+                <span>MySQL</span>
+                <div class="tech-level">Intermédiaire</div>
+            </div>
+            <div class="tech-item">
+                <img src="./Images/git.png" alt="Git">
+                <span>Git</span>
+                <div class="tech-level">Intermédiaire</div>
+            </div>
+        </div>
+    </section>
+    <section id='Projects' class="Projects">
+        <h1>Projets</h1>
+        <div class="projects-grid">
+            <div>
+                <img src="./Images/vampire.png" alt="V-Rising">
+                <div class="project-content">
+                    <h2>V-Rising</h2>
+                    <p>Projet de création d'un fansite vitrine autour d'un thème libre, pour lequel j'ai choisi l'univers de V Rising</p>
+                    <a href="">Voir le projet</a>
+                </div>
+            </div>
+            <div>
+                <img src="./Images/ville-marseille.png" alt="Ville-Marseille">
+                <div class="project-content">
+                    <h2>Ville-Marseille</h2>
+                    <p>Projet visant à révéler Marseille sous des angles inédits grâce à un site vitrine interactif et dynamique</p>
+                    <a href="">Voir le projet</a>
+                </div>
+            </div>
+            <div>
+                <img src="./Images/voyage.png" alt="Voyage">
+                <div class="project-content">
+                    <h2>Voyage</h2>
+                    <p>Site de Reservation de Voyage, Projet d'école</p>
+                    <a href="">Voir le projet</a>
+                </div>
+            </div>
+            <div>
+                <img src="./Images/cybernerd.png" alt="CyberNerd">
+                <div class="project-content">
+                    <h2>CyberNerd</h2>
+                    <p>Site Fan sur la Thème Cyberpunk Old School/Vintage</p>
+                    <a href="">Voir le projet</a>
+                </div>
+            </div>
+            <div>
+                <img src="./Images/multiverse.png" alt="Multiverse">
+                <div class="project-content">
+                    <h2>Multiverse</h2>
+                    <p>Site et application illustrant le fonctionnement des réseaux avec Docker</p>
+                    <a href="">Voir le projet</a>
+                </div>
+            </div>
+        </div>
     </section>
     <footer>
-        <div class="foot">
-            <ul class="citation">
-				<small>© Tout droit réservé par Antony Lucide</small>
-                <li><a href="#"><img class="lien" src="./Images/internet.png" alt="Internet"></a></li>
-                <li><img class="lien" src="./Images/css-3.png" alt="CSS"></li>
-                <li><img class="lien" src="./Images/html-5.png" alt="HTML"></li>
-            </ul>
+        <div id="contact" class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <div class="contact-info">
+                    <a href="mailto:contact@antonylucide.com" class="footer-link">
+                        <i class="fas fa-envelope"></i>
+                        contact@antonylucide.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/antonylucide" class="footer-link">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/antonylucide" class="footer-link">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Technologies</h3>
+                <div class="footer-tech">
+                    <img src="./Images/html-5.png" alt="HTML5" class="footer-icon">
+                    <img src="./Images/css-3.png" alt="CSS3" class="footer-icon">
+                    <img src="./Images/js.png" alt="JavaScript" class="footer-icon">
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <nav class="footer-nav">
+                    <a href="#anchor">Accueil</a>
+                    <a href="#technologies">Technologies</a>
+                    <a href="#projects">Projets</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Antony Lucide. Tous droits réservés.</p>
         </div>
     </footer>
 </body>
