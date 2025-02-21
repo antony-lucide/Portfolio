@@ -178,7 +178,7 @@ html {
 
 .profile-actions {
     display: flex;
-    gap: 20px;
+    gap: 1em;
     margin-top: 30px;
 }
 
@@ -208,6 +208,89 @@ html {
 
 .action-button.primary:hover {
     background-image: linear-gradient(to right, #00748c 0%, #00c65f 100%);
+    animation: downloadBounce 1s ease infinite;
+}
+
+@keyframes downloadBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(3px);
+    }
+}
+
+.action-button i {
+    margin-right: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.action-button:hover i {
+    color: #00a950;
+}
+
+.action-button:hover i.fa-phone {
+    animation: phonePulse 1s ease infinite;
+}
+
+@keyframes phonePulse {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(-15deg);
+    }
+    40% {
+        transform: rotate(15deg);
+    }
+    60% {
+        transform: rotate(-15deg);
+    }
+    80% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.action-button:hover i.fa-github,
+.action-button:hover i.fa-linkedin {
+    animation: socialGlow 1.5s ease infinite;
+}
+
+@keyframes socialGlow {
+    0%, 100% {
+        text-shadow: 0 0 5px rgba(0, 97, 117, 0.5);
+        transform: scale(1.1);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(0, 169, 80, 0.8);
+        transform: scale(1.2);
+    }
+}
+
+.action-button:hover i.fa-envelope {
+    animation: mailWiggle 1s ease infinite;
+}
+
+@keyframes mailWiggle {
+    0%, 100% {
+        transform: scale(1.1) rotate(0deg);
+    }
+    25% {
+        transform: scale(1.1) rotate(-10deg);
+    }
+    75% {
+        transform: scale(1.1) rotate(10deg);
+    }
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contenue {
