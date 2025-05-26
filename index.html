@@ -12,7 +12,7 @@
     <title>Portfolio Antony-Lucide</title>
 </head>
 <body class="p-0 m-0 overflow-x-hidden font-roboto bg-gradient-to-r from-[#00c3ff] to-[#ffff1c] bg-fixed bg-cover bg-no-repeat">
-    <nav class="fixed w-full top-0 z-50 bg-white/20 shadow-md backdrop-blur-md border-b border-white/30">
+    <nav class="hidden md:block fixed w-full top-0 z-50 bg-white/20 shadow-md backdrop-blur-md border-b border-white/30">
         <div class="flex justify-center items-center">
             <ul class="flex justify-center items-center gap-8 list-none py-4 px-2">
                 <img class="h-10 w-auto p-1 drop-shadow" src="./Images/logo-transparent-png.png" alt="CSS Logo">
@@ -238,55 +238,6 @@
             <p class="text-gray-700 text-sm">© 2025 Antony Lucide. Tous droits réservés.</p>
         </div>
     </footer>
-    <script type="text/tailwindcss">
-        @layer utilities {
-        @keyframes downloadBounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(3px); }
-        }
-        .animate-download-bounce {
-            animation: downloadBounce 1s ease infinite;
-        }
-
-        /* Animation wiggle pour l'icône mail */
-        @keyframes mailWiggle {
-            0%, 100% { transform: scale(1.1) rotate(0deg); }
-            25% { transform: scale(1.1) rotate(-10deg); }
-            75% { transform: scale(1.1) rotate(10deg); }
-        }
-        .animate-mail-wiggle {
-            animation: mailWiggle 1s ease infinite;
-        }
-
-        /* Animation pulse pour l'icône téléphone */
-        @keyframes phonePulse {
-            0% { transform: rotate(0deg);}
-            20% { transform: rotate(-15deg);}
-            40% { transform: rotate(15deg);}
-            60% { transform: rotate(-15deg);}
-            80% { transform: rotate(15deg);}
-            100% { transform: rotate(0deg);}
-        }
-        .animate-phone-pulse {
-            animation: phonePulse 1s ease infinite;
-        }
-
-        /* Animation glow pour les icônes réseaux */
-        @keyframes socialGlow {
-            0%, 100% {
-            text-shadow: 0 0 5px rgba(0, 97, 117, 0.5);
-            transform: scale(1.1);
-            }
-            50% {
-            text-shadow: 0 0 20px rgba(0, 169, 80, 0.8);
-            transform: scale(1.2);
-            }
-        }
-        .animate-social-glow {
-            animation: socialGlow 1.5s ease infinite;
-        }
-        }
-    </script>
     <script>
         tailwind.config = {
           theme: {
@@ -298,5 +249,9 @@
           }
         }
       </script>
+    <button id="scrollToTopBtn" class="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-[#006175] text-white shadow-lg transition-opacity opacity-0 pointer-events-none sm:flex md:hidden items-center justify-center" aria-label="Remonter">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+    </button>
+    <script src="./scripts/scroll-top.js"></script>
 </body>
 </html>
