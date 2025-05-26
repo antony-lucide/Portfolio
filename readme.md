@@ -31,7 +31,7 @@ Chaque logo de stack est cliquable et mène à la documentation officielle.
 ## 🛠️ Utilisation
 1. Clone ou télécharge le dépôt.
 2. Ouvre simplement le fichier `index.html` dans ton navigateur préféré.
-3. Aucun serveur ou installation n'est nécessaire (site statique 100% HTML/CSS).
+3. Aucun serveur ou installation n'est nécessaire (site statique).
 
 ## ➕ Ajouter une stack ou un projet
 - **Ajouter une stack** :
