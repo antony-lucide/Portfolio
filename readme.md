@@ -15,7 +15,7 @@ Voici les technologies et outils mis en avant dans la section "Stacks" :
 - [MySQL](https://dev.mysql.com/doc/) : Base de données relationnelle.
 - [Docker](https://docs.docker.com/) : Conteneurisation et déploiement d'applications.
 - [Unity](https://docs.unity3d.com/Manual/index.html) : Moteur de jeux et d'applications 3D/2D.
-- [SDK (ex: Source2)](https://developer.valvesoftware.com/wiki/Source_2) : Kit de développement logiciel, ici l'exemple Source2 de Valve.
+- [SDK (ex: Source2)](https://developer.valvesoftware.com/wiki/Source_2) : Kit de développement logiciel/logiciel de jeux entièrement conçu par Valve.
 - [Tailwind CSS](https://tailwindcss.com/docs/installation) : Framework CSS utilitaire pour un design moderne et responsive.
 
 Chaque logo de stack est cliquable et mène à la documentation officielle.
